@@ -1,2 +1,3 @@
 # CMI_programmation
-CMI ressources TDs
+Ce dépôt rassemble des ressources (scripts, données) en appui des TDs de cours du CMI. Les étudiants sont invités à "forker" ce dépôt.
+
