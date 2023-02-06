@@ -7,4 +7,4 @@ Cette séance poursuit et creuse les possibilités offertes par pandas, et revie
 Des exercices sont proposés dans deux fiches séparées:
 
 * <a href="./README pandas.md">Librarie pandas et `DataFrame`</a>
-* <a href="./README re.md">Expressions régulières et librairie `re`</a>
+* <a href="./README plotly.md">Premières visualisations avec la librairie `plotly`</a>

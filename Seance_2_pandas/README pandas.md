@@ -37,13 +37,28 @@ On reprend l'exemple des données d'appels téléphoniques (fichier `TEL.csv`), 
 * Combien d'appels sont d'une durée de plus d'un quart d'heure ?
  * Ne retenez que les lignes pour lesquelles la valeur du champ `Duration_sec` excède le quart d'heure, puis accéder au nombre de lignes du DataFrame ainsi obtenu (à l'iade de l'attribut `shape`d'un `DataFrame`).
 
+### Trier un `DataFrame`
+
+Trouver la méthode qui permet de trier les entrées (lignes) d'un `DataFrame`. explorer les paramètres qui permettent de trier en ordre ascendant ou descendant. Peut-on trier selon plusieurs critères (plusieurs colonnes) ?
+
 ### Regrouper les lignes d'un `DataFrame`
 
 Trouver la méthode qui permet de regrouper les lignes d'un `DataFrame` selon les valeurs présentes dans une colonne donnée. Cela dit, le regroupement des lignes n'est pas la fin en soi du regroupement des lignes, l'objectif étant de calculer une valeur pour chacun des groupes à partir des valeurs pour une colonne des éléments du groupe (comme l'illustre le schéma).
 
 ![](./pandas-groupby-split-apply-combine.svg)
  
- * **Exercice.**  Utiliser cette méthode pour calculer le temps moyen d'un appel pour chacun des jours de la semaine.
+* **Exercice.**  Utiliser cette méthode pour calculer le temps moyen d'un appel pour chacun des jours de la semaine.
+
+* **Exercice.**  Utiliser cette méthode pour calculer le temps moyen d'un appel pour chacun des jours de la semaine pour le numéro de téléphone `4RU64I8I242`.
+
+* **Exercice.**  Avec qui l'utilisateur `4RU64I8I242` a-t-il passer le plus de temps au téléphone (durée totale des appels) ? Procédez avec ordre:
+ * On filtre par rapport à l'appelant (`4RU64I8I242`)
+ * On regroupe selon les numéros appelés (`Called_Number`), et on effectue la somme des durée d'appels (`sum`sur le champ `Duration_Sec`)
+ * On prend soin de nommer la colonne qui reçoit le résultat
+ * On trie sur cette nouvelle colonne en ordre décroissant
+
+
+
 
 	
 
