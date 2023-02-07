@@ -11,13 +11,13 @@ On reprend encore ici les données sur les appels téléphoniques.
 ### Histogrammes (`barchart`)
 
 * **Exercice.** Construisez une visualisation à l'aide d'un histogramme des temps moyen d'appels selon les jours de la semaine.
- * Savez-vous obtenir une visualisation où les jours sont ordonnés (`Monday`, `Tuesday`, ..., `Sunday`) ?
+    * Savez-vous obtenir une visualisation où les jours sont ordonnés (`Monday`, `Tuesday`, ..., `Sunday`) ?
 
 ![](./Appels_Weekdays.png)
 
 * Obtenez un histogramme qui cette fois donne une idée de la distribution des durées des appels.
- * Attention à bien choisir le nombre de "bins" pour y voir quelque chose
- * On peut aussi passer l'ordonnées en échelle logarithmiques (puisqu'on a affaire à une loi de puissance)
+    * Attention à bien choisir le nombre de "bins" pour y voir quelque chose
+    * On peut aussi passer l'ordonnées en échelle logarithmiques (puisqu'on a affaire à une loi de puissance)
 
 ![](./Distribution_durees.png)
 
