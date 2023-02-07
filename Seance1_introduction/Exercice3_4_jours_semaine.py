@@ -24,7 +24,7 @@ fin_journee = datetime.strptime('18:00:00', '%H:%M:%S')
 compil_appels_journees = {x: 0 for x in ['matinee', 'journee', 'soiree']}
 
 def to_when(date_str):
-	global matinee, journee, minuit
+	global fin_matinee, fin_journee
 	when = datetime.strptime(date_str, '%H:%M:%S')
 	if when < fin_matinee:
 		return 'matinee'

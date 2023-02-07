@@ -71,7 +71,7 @@ Cette seconde série d'exercices exigent d'utiliser des dictionnaires, et de rec
 
 * **Exercice**. Calculez pour chacune des lettres de l’alphabet, y compris les lettres accentuées (à, â, é, ê, è, etc.):
  * Le nombre de mots débutant par cette lettre.
- * Le nombre d'instances de cette lettre dans le doctionnaire (la liste de mots contenue dans le fichier).
+ * Le nombre d'instances de cette lettre dans le dictionnaire (la liste de mots contenue dans le fichier).
 Vous utiliserez un dictionnaire indexé par les lettres, dont les valeurs seront initialisées à 0
 Vous itérerez sur le fichier de mots, en incrémentant l’entrée correspondante du dictionnaire
 * **Exercice**. Combien de mots contiennent la double consonne « tt » ? Combien de mots contiennent une double consonne ? Combien de mots contiennent deux la lettre « z » ?
