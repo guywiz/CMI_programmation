@@ -44,6 +44,7 @@ Une première série d'exercices exige de manipuler le contenu du fichier `csv` 
  * Vous utiliserez la librairie csv qui permet d’accéder aux champs d’une ligne à partir des entêtes de colonnes.
 * **Exercice**. Calculer la durée d’une conversation:
 	* Moyenne, Médiane, Min, Max, Ecart-type
+	 * *Le calcul de la médiane n'ets pas immédiat (par un simple parcours des valeurs), il faut s'en remettre à l'utilisation d'une librairie qui calcule la médiane à partir de la liste de toutes les valeurs.*
 	* Histogramme, Distribution ?
 	* Difficultés techniques: extraire la durée (en heure:minutes:secondes) convertie en secondes depuis trois chaînes de caractères
 * **Exercice**. Combien y a t-il d’appel chaque jour de la semaine ?
