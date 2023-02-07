@@ -20,22 +20,22 @@ On reprend l'exemple des données d'appels téléphoniques (fichier `appels_telT
 ### Manipuler un `DataFrame`
 
 * **Exercice.** Peut-on appliquer une fonction aux éléments d'une colonne d'un DataFrame ? Comment peut-on créer une nouvelle colonne du DataFrame qui contient le résultat de cette fonction ?
-	* Appliquer cette "astuce" pour créer dans `df_TEL` une colonne qui contient la durée en secondes de l'appel.
+    * Appliquer cette "astuce" pour créer dans `df_TEL` une colonne qui contient la durée en secondes de l'appel.
 
 * **Exercice.** Lorsqu'une colonne contient des valeurs numériques, on peut obtenir facilement le calcul de la moyenne, max, min et écart-type de la variable. Calculer la durée moyenne, puis max et min d'un appel, et l'écart-type de cette durée.
 
 * **Exercice.** Peut-on appliquer une fonction aux éléments de plus d'une colonne d'un DataFrame (et créer une une nouvelle colonne qui contient le résultat) ?
-	* Appliquer cette "astuce" pour créer dans `df_TEL` une colonne qui contient un élément de type `datetime`(une date et pas une simple chaîne de caractères) qui correspond aux champs `Date`et `Heure`.
-	* Utiliser cette valeur en format `datetime` pour calculer le jour de la smeaine de l'appel (et le stocker dans une autre colonne).
+    * Appliquer cette "astuce" pour créer dans `df_TEL` une colonne qui contient un élément de type `datetime`(une date et pas une simple chaîne de caractères) qui correspond aux champs `Date`et `Heure`.
+    * Utiliser cette valeur en format `datetime` pour calculer le jour de la smeaine de l'appel (et le stocker dans une autre colonne).
 
 ### Filtrer un `DataFrame`
 
 * **Exercice.** Calculer le temps total des appels initiés par la porteur du numéro (`Calling_Number`) `4RU64I8I242`.
- * Procéder en ne préservant que les lignes dont la valeur du champ `Calling_Number`a la valeur `4RU64I8I242`
- * Appliquer la fonction somme (`sum`) à la colonne `Duration_sec` qui donne la durée d'un appel en secondes.
+    * Procéder en ne préservant que les lignes dont la valeur du champ `Calling_Number`a la valeur `4RU64I8I242`
+    * Appliquer la fonction somme (`sum`) à la colonne `Duration_sec` qui donne la durée d'un appel en secondes.
 
 * Combien d'appels sont d'une durée de plus d'un quart d'heure ?
- * Ne retenez que les lignes pour lesquelles la valeur du champ `Duration_sec` excède le quart d'heure, puis accéder au nombre de lignes du DataFrame ainsi obtenu (à l'iade de l'attribut `shape`d'un `DataFrame`).
+    * Ne retenez que les lignes pour lesquelles la valeur du champ `Duration_sec` excède le quart d'heure, puis accéder au nombre de lignes du DataFrame ainsi obtenu (à l'aide de l'attribut `shape`d'un `DataFrame`).
 
 ### Trier un `DataFrame`
 
@@ -52,10 +52,10 @@ Trouver la méthode qui permet de regrouper les lignes d'un `DataFrame` selon le
 * **Exercice.**  Utiliser cette méthode pour calculer le temps moyen d'un appel pour chacun des jours de la semaine pour le numéro de téléphone `4RU64I8I242`.
 
 * **Exercice.**  Avec qui l'utilisateur `4RU64I8I242` a-t-il passer le plus de temps au téléphone (durée totale des appels) ? Procédez avec ordre:
- * On filtre par rapport à l'appelant (`4RU64I8I242`)
- * On regroupe selon les numéros appelés (`Called_Number`), et on effectue la somme des durée d'appels (`sum`sur le champ `Duration_Sec`)
- * On prend soin de nommer la colonne qui reçoit le résultat
- * On trie sur cette nouvelle colonne en ordre décroissant
+    * On filtre par rapport à l'appelant (`4RU64I8I242`)
+    * On regroupe selon les numéros appelés (`Called_Number`), et on effectue la somme des durée d'appels (`sum`sur le champ `Duration_Sec`)
+    * On prend soin de nommer la colonne qui reçoit le résultat
+    * On trie sur cette nouvelle colonne en ordre décroissant
 
 
 
