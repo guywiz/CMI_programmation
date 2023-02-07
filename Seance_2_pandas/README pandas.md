@@ -10,12 +10,12 @@ La librairie pandas offre une structure de données: les `DataFrame` (et leur ve
 
 Ces exercices consistent à explorer les possibités de la librairie. Ils vous mettent au défi de toruver la réponse en fouillant sur le net (documentation python, W3C School, blogs de développeurs, etc.).
 
-On reprend l'exemple des données d'appels téléphoniques (fichier `appels_tel.csv`), chargé dans un `DataFrame` qu'on appelera `df_TEL`.
+On reprend l'exemple des données d'appels téléphoniques (fichier `appels_telTEL.csv`), chargé dans un `DataFrame` qu'on appelera `df_TEL`.
 
 ### Lecture et sauvegarde d'un `DataFrame`
 
 * **Exercice.** Peut-on sauvegarder un DataFrame sur disque ? Quels sont les formats possibles et leurs avantages/inconvénients ? Quelles sont les méthodes pour charger le DataFrame en mémoire depuis chacun de ces formats ?
- * [Un article intéressant à lire](https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d) pour en savoir plus sur les formats et leurs "performances" respectives.
+    * [Un article intéressant à lire](https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d) pour en savoir plus sur les formats et leurs "performances" respectives.
 
 ### Manipuler un `DataFrame`
 
