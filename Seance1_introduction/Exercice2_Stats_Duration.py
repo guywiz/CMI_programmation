@@ -8,14 +8,10 @@ def to_seconds(h_m_s):
 
 def to_h_m_s(nb_seconds):
 	seconds_left = nb_seconds
-	print(seconds_left)
 	nb_hours = int(seconds_left // 3600)
 	seconds_left = seconds_left % 3600
-	print(seconds_left)
 	nb_minutes = int(seconds_left // 60)
 	seconds_left = seconds_left % 60
-	print(seconds_left)
-	print(str(f'{nb_hours}:{nb_minutes}:{seconds_left}'))
 	return str(f'{nb_hours}:{nb_minutes}:{nb_seconds}')
 
 
