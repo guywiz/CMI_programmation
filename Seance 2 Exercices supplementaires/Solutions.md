@@ -20,7 +20,7 @@ L'enquête concerne donc 4114 personnes.
 
 * _Combien de prises d'aliments concerne-t-elle, en moyenne, pour chacun des individus ?_
 
-Il faudrait pour chaque individu calculer le nombre de lignes le concernant. On peut obtenir cette valeur en créan artificiellement une colonne dont la valeur est systématiquement 1 et faire un regroupement par individu avant d'appliquer l'opérateur `sum`.
+Il faudrait pour chaque individu calculer le nombre de lignes le concernant. On peut obtenir cette valeur en créant artificiellement une colonne dont la valeur est systématiquement 1 et faire un regroupement par individu avant d'appliquer l'opérateur `sum`.
 
 `conso_df['Prise_aliments'] = 1`
 
@@ -39,11 +39,11 @@ On peut encore ici fois utiliser la colonne 'Prise_aliments' (qui vaut systémat
 
 `prises_lieux = conso_df[['occ_lieu', 'Prise_aliments']].groupby(['occ_lieu']).sum()`
 
-On constate que le domicile dépasse largement tous les autres lieux de consommation. Il ets plus de dix fois égal à l'occurence du second lieu (qui est `Chez amis/famille/assistante maternelle...`).
+On constate que le domicile dépasse largement tous les autres lieux de consommation. Il est plus de dix fois égal à l'occurence du second lieu (qui est `Chez amis/famille/assistante maternelle...`).
 
-* Quel aliment (consommé par un individu ayant participé à l'enquête) contient le plus de `magnesium` ? (Peut-être y a -t-il plusieurs réponses possibles à la question)
+* _Quel aliment (consommé par un individu ayant participé à l'enquête) contient le plus de `magnesium` ? (Peut-être y a -t-il plusieurs réponses possibles à la question)_
 
-La quantité de magnesium de l'aliment consommé apparait en colonne `magnesium`. Il nous faut trouver la valeur maximum apparaissant dans cette colonne et les aliments pour lesquelles cette valeur est la valeur maximum.
+La quantité de magnesium de l'aliment consommé apparait en colonne `magnesium`. Il nous faut trouver la valeur maximum apparaissant dans cette colonne et les aliments pour lesquels cette valeur est la valeur maximum.
 
 `max_magnesium = conso_df['magnesium'].max()`
 
@@ -82,7 +82,7 @@ Reste à calculer la moyenne de la variable (colonne) `qte_conso`:
 
 * _Qu'a consommé l'individu ayant consommé le plus de sucre (dans une portion) ?_
 
-La quantité maximum de sucres consommée en une portion est:
+La quantité maximum de sucre consommée en une portion est:
 
 `max_sucres = conso_df['sucres'].max()`
 
@@ -104,7 +104,7 @@ Et on liste les différents libellés de ces lignes (prises d'aliments):
 
 `conso_noix['aliment_libelle_INCA3'].unique()`
 
-* _Les pizza (tous types) contiennent-elles en moyenne plus de `fer`ou plus de `cuivre` ?_
+* _Les pizzas (tous types) contiennent-elles en moyenne plus de `fer`ou plus de `cuivre` ?_
 
 `pizzas = conso_df[conso_df['aliment_libelle_INCA3'].str.contains('pizza')]`
 
