@@ -8,7 +8,7 @@ On suppose avoir chargé les données:
 
 `conso_df = pd.read_csv('Conso_compo_alim.csv', sep=';')`
 
-A chaque fois, donnez le script qui permet de répondr eà la quesiotn, et une explication en une phrase précisant ce qu'il faut calculez pour obtenir la réponse à la question, et comment le script procède pour mener le calcul.
+A chaque fois, donnez le script qui permet de répondre à la quesiotn, et une explication en une phrase précisant ce qu'il faut calculez pour obtenir la réponse à la question, et comment le script procède pour mener le calcul.
 
 * _Combien d'individus l'enquête concerne-t-elle ?_
 
@@ -20,7 +20,7 @@ L'enquête concerne donc 4114 personnes.
 
 * _Combien de prises d'aliments concerne-t-elle, en moyenne, pour chacun des individus ?_
 
-Il faudrait pour chaque individu calculer le nombre de lignes le concernant. On peut obtenir cete valeur en créan artificiellement une colonne dont la valeur est systématiquement 1 et fair eun regroupement par individu avant d'appliquer l'opérateur `sum`.
+Il faudrait pour chaque individu calculer le nombre de lignes le concernant. On peut obtenir cette valeur en créan artificiellement une colonne dont la valeur est systématiquement 1 et faire un regroupement par individu avant d'appliquer l'opérateur `sum`.
 
 `conso_df['Prise_aliments'] = 1`
 
