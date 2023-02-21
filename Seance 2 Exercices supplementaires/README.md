@@ -1,49 +1,123 @@
 # CMI_programmation
 
-### Pour en savoir plus ...
+## Epreuve individuelle
 
-Ce [blog de Selva Prabhakaran](https://www.machinelearningplus.com/python/101-pandas-exercises-python/) liste 101 exercices (et propose des solutions) pour les manipulations les plus courantes sur les `DataFrame` (et les `Series`qui mis simplement sont des `DataFrame`à une colonne).
+Les questions se penchent sur les données d'emplois, plus précisément sur les projets de recrutement qui ont cours par région/département/commune, [disponibles sur le site data.gouv.fr](https://www.data.gouv.fr/fr/datasets/enquete-besoins-en-main-doeuvre-bmo/).
 
-Le [site Kaggle propose aussi une liste de 75 exercices sur les `DataFrame`](https://www.kaggle.com/code/tangchengshun/pandas-75-exercises-with-solutions) (avec solutions).
+### Données sur les besoins en main d'oeuvre
 
-## Quelques exercices sur les `DataFrame`
+Vous travaillerez sur les données répertoriant les besoins en main d'oeuvre pour l'année XXX. Vous pouvez télécharger ces données à partir de ce lien.
 
-Les exercices se penchent sur les [données de consommation (au niveau individuel) mises à disposition sur le site `data.gouv.fr`](https://www.data.gouv.fr/fr/datasets/donnees-de-consommations-et-habitudes-alimentaires-de-letude-inca-3/). Consultez le site pour en savoir plus sur les données.
+Les données sont accompagnées d'un fichier décrivant les variables observées pour chacun des projets de recrutement, dont vous prendrez connaissance.
 
-Nous utiliserons le fichier de données `Conso_compo_alim.csv` disponibles dans le dossier `data` de ce dépôt.
+Les données elles-mêmes sont stockées dans un fichier csv séparé.
 
-### Données de consommation
-
-Ces données restent difficiles à interprétées de manière certaine (le protocole de récolte semble assez complexe et technique). Nous conviendrons:
-
-* Que la colonne NOIND est le numéro d'un individu ayant participé à l'expérience. Une ligne associée à ce numéro correspond à une quantité d'aliment consommé par cet individu. Ainsi, la ligne 2 indique que l'individu 110100101 a consommé 147.5 grammes d'eau du robinet.
-    * L'aliment consommé est indiqué à la colonne `occ_alim_libelle` dont les libellés sont suposés "normalisés",
-    * La quantité consommée est indiquée à la colonne `qte_conso` en grammes (avec une correspondance évidente 1g liquide = 1ml, pour tous les liquides, jus, etc.).
-* Nous utiliserons aussi le libellé plus "libres" apparaissant dans les colonnes `aliment_libelle_INCA3` mais laisserons de côté le libellé `aliment_libelle_FX` en langue anglaise.
-* Nous nous intéresserons aussi aux colonnes:
-    * `occ_hdeb` précisant l'heure à laquelle l'aliment est absorbé.
-    * `occ_lieu` qui code le lieu où ets consommé l'aliment. On trouve à la fin d'[une notice](https://www.data.gouv.fr/fr/datasets/r/6262cb5e-747e-442a-97b0-934213a7d504) la signification des codes:
-        1. A la maison
-        2. Chez amis/famille/assistante maternelle...
-        3. A la cantine au travail/crèche/école/collège/lycée/université
-        4. Pas à la cantine, au travail/école/collège/lycée/université
-        5. Restaurant/café/fast-food/sandwicherie sur place...
-        6. Dehors : rue, parc, plage...
-        7. Dans les transports (train/avion/voiture...)
-        8. Autre lieu
+Les différentes variables renseignent le nombre de projets de recrutement par type de métiers et par région et département, en soulignant les projets _jugés difficiles_ ou ceux qui correspondent à des emlpois _saisonniers_.
 
 ### Questions
 
-A chaque fois, donnez le script qui permet de répondr eà la quesiotn, et une explication en une phrase précisant ce qu'il faut calculez pour obtenir la réponse à la question, et comment le script procède pour mener le calcul.
+Dans les colonnes `met`, `xmet` et `smet`, certaines données ne sont pas renseignées et sont remplacées par un simple astérisque `*`. Cela provoque une interprétation par `pandas` du contenu de ces colonnes en tant que chaînes de caractère.
 
-* Combien d'individus l'enquête concerne-t-elle ?
-* Combien de prises d'aliments concerne-t-elle, en moyenne, pour chacun des individus ?
-* On s'attend à ce qu els aliemnts soient pris le plus souvent à la maison -- confirmez cette hypothèse.
-    * Quel ets le deuxième lieu de consommation le plus fréquent ?
-* Quel aliment (consommé par un individu ayant participé à l'enquête) contient le plus de `magnesium` ? (Peut-être y a -t-il plusieurs réponses possibles à la question)
-* Certains aliments sont à base ou contiennent du __chocolat__ (si on se réfère au libellé qui apparait en colonne `aliment_libelle_INCA3`. Combien en moyenne ces aliments contiennent-ils de `magnesium` ?
-* Y a-t-il des aliments sans sucre ?
-    * Quel est le poids moyen d'une portion (consommé par un individu) d'un tel aliment ?
-    * Qu'a consommé l'individu ayant consommé le plus de sucre (dans une portion) ?
-* Quels sont les aliments contenant de la noix ?
-* Les pizza (tous types) contiennent-elles en moyenne plus de `fer`ou plus de `cuivre` ?
+* Quelle(s) instruction(s) permet de vérifier que si la colonne `met`vaut `*`, il en alors va de même pour les colonnes `smet` comme pour la colonne `xmet` ?
+
+On filtre les données pour ne garder que les lignes où `met`est égal à `*`.
+
+`emplois_non_valides_met = emplois[emplois['met'] == '*']`
+
+On filtre ces données pour ne garder que les lignes pour lequelles `smet` est égal à `*`, et on constate que toutes sont concernées (nbombre de lignes du `DataFrame`résultant). La même manipulation vaut pour `xmet`.
+
+`emplois_non_valides_met[emplois_non_valides_met['smet'] == '*']`
+
+--
+
+* Calculer le `DataFrame` ne contenant que les lignes  pour lesquelles la colonne `met` contient bien (une chaîne de caractères représentant) un entier ?
+
+`emplois_valide_met = emplois[emplois['met'] != '*']`
+
+* Quelle instruction appliquée au résultat obtenu permet de convertir la colonne `met`en un entier ? (Astuce: regardez du côté de la méthode `astype`).
+
+`emplois_valides_met['met'] = emplois_valide_met['met'].astype(int)`
+
+--
+
+* Combien de projets de recrutements sont répertoriés pour l'année XXX (2017, 2018, ..., 2022) ?
+
+`emplois_valides_met['met'].sum()`
+
+* Combien parmi ceux-ci concernent un emploi de YYY (`Coiffeur`, `Plombier`, `Journaliste`, `Infirmier`, `Electricien`, `Soudeur`, `Juriste`, `Boucher`, `Charcutier`, `Cuisinier`, `Concierge`, `Graphiste`)  ?
+
+`emplois_valides_met[emplois_valides_met['Nom métier BMO'].str.contains('Coiffeur')]['met'].sum()`
+
+--
+
+* Dans quelle région le nombre de recrutements jugés difficiles est-il le plus grand ?
+
+On écarte le slignes non renseignées:
+
+`emplois_valides_met_xmet = emplois_valides_met[emplois_valides_met['xmet'] != '*']`
+
+On convertit la valeur `xmet`en entier:
+
+`emplois_valides_met_xmet['xmet'] = emplois_valides_met_xmet['xmet'].astype(int)`
+
+(on peut ignorer le message qui n'est qu'un "Warning")
+
+et on calcule:
+
+`emplois_valides_met_xmet[['NOM_REG', 'xmet']].groupby('NOM_REG').sum()`
+
+pour constater que le besoin est le plus grand en Ile-de-France.
+
+--
+
+* En Nouvelle-Aquitaine, quel est le besoin (parmi les recrutements jugés difficiles) en moyenne sur les familles de métiers ?
+
+On filtre les données pour ne conserver que les chiffres concernant la Nouvelle-Aquitaine:
+
+`emplois_valides_met_xmet_NA = emplois_valides_met_xmet[emplois_valides_met_xmet['NOM_REG'] == 'Nouvelle-Aquitaine']`
+
+et on calcule:
+
+`emplois_valides_met_xmet_NA[['Lbl_fam_met', 'xmet']].groupby('Lbl_fam_met').sum()`
+
+pour constater que la demande (en projets jugés difficiles) est la plus forte pour les métiers liés aux "Fonctions liées à la vente, au tourisme et aux services".
+
+--
+
+* En ZZZ (département Gironde, Landes, ...), sur quelle commune le nombre de projets de recrutement saisonniers est-il le plus grand ?
+
+On filtre les données pour ne garder que les lignes qui sont renseignées, on convertit les données en type entier, puis on regroupe par commune avant de calculer le total de projets de recrutements saisonniers:
+
+`emplois_saisonniers = emplois[emplois['smet'] != '*']`
+
+`emplois_saisonniers['smet'] = emplois_saisonniers['smet'].astype(int)`
+
+`emplois_saisonniers_Gironde = emplois_saisonniers[emplois_saisonniers['NomDept'] == 'Gironde']`
+
+`emplois_saisonniers_Gironde[['NOMBE22', 'smet']].groupby('NOMBE22').sum()`
+
+pour trouver que le nombre de métiers saisonniers ets le plus grand sur la commune de Bordeaux.
+
+* En Gironde toujours, pour quel métier le nombre de projets de recrutements saisonniers est-il le plus grand ?
+
+Il faut regrouper les donnnées (pour la Gironde) selon les métiers et calculer la somme des valeurs `smet`, puis extraire la métier qui correspond à cette valeur maximum:
+
+`max = emplois_saisonniers_Gironde[['Nom métier BMO', 'smet']].groupby('Nom métier BMO').sum().max()`
+
+`mask = emplois_saisonniers_Gironde[['Nom métier BMO', 'smet']].groupby('Nom métier BMO').sum()['smet'] == max`
+
+`emplois_saisonniers_Gironde[['Nom métier BMO', 'smet']].groupby('Nom métier BMO').sum()[mask]`
+
+qui permet d'identifier le métier de _Viticulteurs, arboriculteurs salariés_.
+
+* Dans quelle région la proportion des projets de recrutements de `Maraîcher` qui sont des emplois saisonniers est la plus grande ?
+
+Il faut d'abord convertir le champ `met` en entier (on ne l'a pas fait), puis regrouper selon les régions, avant de calculer le ratio:
+
+`emplois_saisonniers['met'] = emplois_saisonniers['met'].astype(int)`
+
+`compil_emplois_saisonniers = emplois_saisonniers[['NOM_REG', 'met', 'smet']].groupby('NOM_REG').sum()`
+
+`compil_emplois_saisonniers['ratio'] = compil_emplois_saisonniers['smet'] / compil_emplois_saisonniers['met']`
+
+pour trouver que ce ratio est le plus grand dans la région de Corse.
