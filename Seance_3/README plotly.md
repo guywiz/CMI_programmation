@@ -2,7 +2,7 @@
 
 ## Séance 3 - visualisations avec `plotly`
 
-Vous avez déjà fait une oremière visualisation avec `plotly` (un barchart à partir des données d'appels téléphoniques).
+Vous avez déjà fait une première visualisation avec `plotly` (un barchart à partir des données d'appels téléphoniques).
 
 La librarie `plotly`offre un nombre relativement grand de visualisations maintenant devenues standard. [Prenez-le temps d'aller jeter un coup d'oeil](https://plotly.com/python/).
 
