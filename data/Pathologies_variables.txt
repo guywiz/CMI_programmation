@@ -1,0 +1,31 @@
+annee: annee[date] année
+
+patho_niv1: patho_niv1[text] groupe de pathologies (ou traitements chroniques ou épisodes de soins)
+
+patho_niv2: patho_niv2[text] sous-groupe de pathologies (ou traitements chroniques ou épisodes de soins)
+
+patho_niv3: patho_niv3[text] sous-groupe détaillé de pathologies (ou traitements chroniques ou épisodes de soins)
+
+top: top[text] libellé technique de la pathologie (ou traitement chronique ou épisode de soins)
+
+cla_age_5: cla_age_5[text] classe d’âge (5 ans)
+
+sexe: sexe[text] sexe
+
+region: region[text] région
+
+dept: dept[text] département
+
+Ntop: ntop[int] effectif de patients pris en charge pour la pathologie (ou traitement chronique ou épisode de soins) dont il est question
+
+Npop: npop[int] population de référence qui est celle de la cartographie des pathologies et des dépenses de l’Assurance Maladie
+
+prev: prev[double] prévalence de patients pris en charge pour la pathologie (ou traitement chronique ou épisode de soins) dont il est question
+
+Niveau prioritaire: niveau_prioritaire[text]
+
+libelle_classe_age: libelle_classe_age[text] libellé de la classe d’âge
+
+libelle_sexe: libelle_sexe[text] libellé du sexe
+
+tri: tri[double]
