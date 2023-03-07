@@ -14,12 +14,12 @@ Veillez à produire du code bien structuré. Vous reprendrez ce code la fois pro
 
 ### Line Plots
 
-* **Exercice.** Sur le modèle proposé `Average High and Low Temperatures in New York`, construisez des visualisations :
+* **Exercice.** Sur [le modèle proposé `Average High and Low Temperatures in New York`](https://plotly.com/python/line-charts/#style-line-plots), construisez des visualisations :
     * de l'évolution des emplois (projets de recrutements) sur trois familles de métiers, en montrant les courbes des emplois (`met`), des emplois jugés difficiles `xmet`) et des emplois saisonniers (`smet`) sur la période 2017 - 2020.
     * ou de l'évolution des emplois (projets de recrutements) sur trois régions, en montrant les courbes des emplois (`met`), des emplois jugés difficiles `xmet`) et des emplois saisonniers (`smet`) sur la période 2017 - 2020.
 
 ### Pie Charts
-* **Exercice.** Proposer une question sur les données qui peut trouver répoinse à l'aide d'une représentaiton en Pie Chart (Camembert). Explorez les paramètres de formes du Pie Charts (choix de l apalette de couleurs, légende, effets de style, ...).
+* **Exercice.** Proposer une question sur les données qui peut trouver réponse à l'aide d'une représentaiton en Pie Chart (Camembert). Explorez les paramètres de formes du Pie Charts (choix de la palette de couleurs, légende, effets de style, ...).
 
 ### Box Plots (boîtes à moustaches)
 
