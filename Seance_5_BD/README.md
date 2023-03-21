@@ -130,3 +130,7 @@ Pour les données sur les emplois:
 **Exercice.** On suppose ici avoir arrêté le schéma de la base de données qui stockera les données de santé / emplois. Ecrivez un script insère en base les données.
 
 Il vous faudra vous intéresser aux types possibles des champs stockés en base (chaînes de caractères, valeurs numériques, date, etc.).
+
+### Jointures
+Puisque le passage en forme(s) normale(s) amène à "éclater" les donnée sur plusieurs relations (tables), les requêtes sur les données vont exiger de "rassembler" en une même relation (table) des données se trouvant dans des relations distinctes. Cette opération est appelée une _jointure_. Elle consiste à faire correspondre des éléments de deux tables différentes à partir d'un atttribut qu'elle partage. Plusieurs cas peuvent se présenter:
+
