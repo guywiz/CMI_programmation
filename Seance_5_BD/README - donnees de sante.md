@@ -10,7 +10,7 @@ L'analyse des données de santé nous amène à y voir trois types d'entités:
 
 On crée donc un schéma qui reprend ces entités, et les associations entre elles.
 
-* L'entité localisation géographique, décrite par le nom de département (et la région à laquelle il appartient). Le nom de département est une clé primaire naturelle de cette entité (ou son numéro).
+* L'entité localisation géographique, décrite par le numéro de département (et de la région à laquelle il appartient). Le numéro de département est une clé primaire naturelle de cette entité (ou son numéro).
 * L'entité pathologie décrite par les trois chaps patho_niv1, 2 et 3, et le "nom de code" top. (Il faudrait préalablement vérifier que ce code `top` est en effetunique pour chaque pathologie.) Cela en fait donc la clé primaire pour cette entité.
 * Les données sur la population qui indique la taille de la population, dans un départemnt donné et une année particulière (entre 2015 et 2020), qui souffre de cette pathologie (`npop`) et le nombre parmi celle-ci qui a subi une hospitatlisation (`ntop`).
 
