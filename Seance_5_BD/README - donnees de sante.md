@@ -18,11 +18,11 @@ A noter certains attributs dont le sens est difficle à cerner pour les non-spé
 
 Ainsi, le schéma de la base se résuime en trois entités:
 
-`geographie (_dept_ text PRIMARY KEY, region text)`
+`geographie (dept text PRIMARY KEY, region text)`
 
 ```
 pathologies (
-		_top_ text PRIMARY KEY,
+		top text PRIMARY KEY,
 		patho_niv1 text,
 		patho_niv2 text,
 		patho_niv3 text,
