@@ -22,7 +22,7 @@ Ainsi, le schéma de la base se résuime en trois entités:
 
 ```
 pathologies (
-		_top_ text PRIMARY KEY,
+		__top__ text PRIMARY KEY,
 		patho_niv1 text,
 		patho_niv2 text,
 		patho_niv3 text,
