@@ -68,7 +68,7 @@ L'application ets alors accessible depuis un navigateur à l'URL `http://127.0.0
 * La proportion de projets de recrutement jugés difficiles (`xmet`) par région (axe horizontal) pour une famille de métiers (choix dans un menu `dropdown`)
 * La proportion de postes saisonniers (champs `smet`) par région (axe horizontal) pour une année (choix de l'année dans un menu `dropdown`), pour la famille de métiers `Ouvriers de la construction et du bâtiment`
 
-**Exercice**. Porposez une visualisation où l'utilisateur fixe deux paramètres, à l'aide de deux menus déroulants (dropdown) d'une visualisation, comme exemple:
+**Exercice**. Proposez une visualisation où l'utilisateur fixe deux paramètres, à l'aide de deux menus déroulants (dropdown) d'une visualisation, comme exemple:
 * La proportion de postes saisonniers (champs `smet`) par région (axe horizontal) pour une année (choix de l'année dans un menu `dropdown`), et pour une famille de métiers (choisi dans un autre menu `dropdown`).
 * Proposez une autre visualisation de ce type.
 
