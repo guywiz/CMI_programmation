@@ -15,4 +15,13 @@ Cette fiche explicite les attendus du projet, et les critères d'évaluation, ta
     * Vous avez sélectionné des (>+ 2) visualisations qui sont pertinentes pour répondre à certaines questions sur les données. Vous gérez des interactions sur les visualisations (sélection d'une zone ou de certains points, etc.).
     * L'association entre questions et visualisations sera documentée.
 * Votre code est bien construit, modulaire et lisible.
+    * Utilisez des fonctions pour isoler des calculs par nature (accès à la base de données, manipulation des dataframes, etc.)
+    * Faites une bonne utilisation du paramétrage des chaînes de caractères (notamment pour les requêtes `SQL`).
 * Vous documentez votre application (fichier README) permettent à un utilisateur intéressé de faire tourner facilement votre application. Les dépendance à des librairies tierces sont renseignées, vous aurez construit un fichier `requirements.txt` facilitant la création d'un environnement dans lequel l'application sera exécutée.
+
+### Evaluation
+
+L'évaluation tiendra compte des attendus énumérés à la section précédente. Il ser aaussi pris en compte:
+
+* La difficulté technique des visualisations proposées, et donc de l'effort nécessaire à leur construction. La qualité du rendu sera aussi appréciée (choix des variables visuelles en fonction des données visualisées).
+* Sur le code, 
