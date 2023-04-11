@@ -19,7 +19,7 @@ Cette fiche explicite les attendus du projet, et les critères d'évaluation, ta
     * Faites une bonne utilisation du paramétrage des chaînes de caractères (notamment pour les requêtes `SQL`).
 * Vous documentez votre application (fichier README) permettent à un utilisateur intéressé de faire tourner facilement votre application. Les dépendance à des librairies tierces sont renseignées, vous aurez construit un fichier `requirements.txt` facilitant la création d'un environnement dans lequel l'application sera exécutée.
 
-### Evaluation
+---
 
 L'évaluation tiendra compte des attendus énumérés à la section précédente. Il ser aaussi pris en compte:
 
