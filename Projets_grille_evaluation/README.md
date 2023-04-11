@@ -24,4 +24,3 @@ Cette fiche explicite les attendus du projet, et les critères d'évaluation, ta
 L'évaluation tiendra compte des attendus énumérés à la section précédente. Il ser aaussi pris en compte:
 
 * La difficulté technique des visualisations proposées, et donc de l'effort nécessaire à leur construction. La qualité du rendu sera aussi appréciée (choix des variables visuelles en fonction des données visualisées).
-* Sur le code, 
