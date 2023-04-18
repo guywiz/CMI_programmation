@@ -3,7 +3,7 @@ A titre d'exemple pour préparer l'épreuve du 26/04/2023
 
 ## Création d'une base de données
 
-On dispose d'un unique fichier (`csv`) décrivant les commandes effectuées par des clients auprès d'un fournisseur de vêtements. Le fichier contient sur chaque ligne une information d'une commande (`order`), décrivant le produit (`product`) commandé, et le client (`customer`) l'ayant commandé.
+On dispose d'un unique fichier (`clothes_sales.csv`) décrivant les commandes effectuées par des clients auprès d'un fournisseur de vêtements. Le fichier contient sur chaque ligne une information d'une commande (`order`), décrivant le produit (`product`) commandé, et le client (`customer`) l'ayant commandé.
 
 Ce fichier `csv` correspond en quelque sorte à une base de données réduite à _une seule relation_ (table).
 
