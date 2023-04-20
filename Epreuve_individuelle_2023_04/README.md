@@ -23,7 +23,7 @@ Ce fichier `csv` correspond en quelque sorte à une base de données réduite à
     * `customer(name, gender, age, no/street, city, postal_code, country)` clé primaire `name`
     * `product(product_id, product_name, product_type, size, colour, unit_price, description)`clé primaire `product_id` (qu'il faut générer puisque nous n'avons pas d'identifiant pour les produits)
     * `order(id, date, customer)` clé primaire `id`, clé étrangère `customer`
-    * qui doit être complétée par une relation d'association qui associe commande, produit et client:
+    * qui doit être complétée par une relation d'association qui associe commande et produits:
     * `order_list(order_id, product_id, quantity)` clés étrangères `order_id` et `product_id`
 
 --
