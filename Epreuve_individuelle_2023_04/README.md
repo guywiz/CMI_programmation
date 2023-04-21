@@ -28,8 +28,12 @@ Ce fichier `csv` correspond en quelque sorte à une base de données réduite à
 
 --
 
-* Proposez une requête qui calcule le nombre de commandes d'un client donné, dont on précise le nom (champ `customer`).
+* Proposez une requête qui calcule le nombre de commandes d'un client donné, dont on précise le nom (champ `customer`) _nom_.
+    * La requête n'implique que la table `order`:
+    * `SELECT COUNT(id) FROM order WHERE customer=`_nom_
 * Proposez une requête qui calcule le nombre de produits commandés par un client donné (parmi toutes les commandes qu'il a passé) , dont on précise le nom (champ `customer`).
+    * Cette fois, il faut utiliser deux tables, `order` et `order_list`:
+    * `SELECT COUNT(DISTINCT OL.product_id) FROM order_list as OL, orders as O WHERE O.customer=`_nom_ `AND O.id = OL.order_id` 
 * Proposez un script qui calcule le montant total d'une commande (à partir de son numéro).
 * ...
 
