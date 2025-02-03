@@ -13,7 +13,7 @@ Cette première leçon fait une revue du langage `python` afin de poser les base
 * Construction d'une liste à la volée (List Comprehension) `[x^2 for x in range(10)]`
     * Tri
     * Filtrage d'une liste `filter(lambda x: math.sqrt(x) < 2, range(10))`
-    * On peut parcourir une liste en itératn simultanément sur ses valeurs et ses indices (pratique !) `for i, x in enumerate(L)`
+    * On peut parcourir une liste en itérant simultanément sur ses valeurs et ses indices (pratique !) `for i, x in enumerate(L)`
 
 * Les **dictionnaires** sont des ensembles de paires (clé, valeur) dont l'ordre n'importe pas.
     * On peut accéder aux clés du dictionnaire `D.keys()`, ou à ses valeurs `D.values()` ou à ses paires `D.items()`
