@@ -1,10 +1,8 @@
-# CMI_programmation
+# CMI_programmation - Leçon 1
 
-## Séance d'introduction
+Cette première leçon fait une revue du langage `python` afin de poser les bases.
 
-Cette première séance fait une revue du langage python afin de poser les bases.
-
-### Structures de données
+## Structures de données
 
  `python`propose essentiellement deux structures de données: les _listes_ et les _dictionnaires_.
  
@@ -22,7 +20,7 @@ Cette première séance fait une revue du langage python afin de poser les bases
 
 * Les **ensembles** (`S = set()`) stockent des éléments (de type varié), sans répétition possible (alors que c'ets possible pour une liste) et sans respect d'un ordre particulier.
 
-### Fichiers
+## Fichiers
 
 Un fichier, au sens `python`, correspond au contenu d'un fichier pysique (stocké sur disque). Il requière d'y accéder en l'_ouvrant_ (et en le _fermant_ après utilisation), et en demandant de lire le contenu (tout ou partie).
 
