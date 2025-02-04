@@ -22,7 +22,7 @@ Cette première leçon fait une revue du langage `python` afin de poser les base
 
 ## Fichiers
 
-Un fichier, au sens `python`, correspond au contenu d'un fichier pysique (stocké sur disque). Il requière d'y accéder en l'_ouvrant_ (et en le _fermant_ après utilisation), et en demandant de lire le contenu (tout ou partie).
+Un fichier, au sens `python`, correspond au contenu d'un fichier physique (stocké sur disque). Il requière d'y accéder en l'_ouvrant_ (et en le _fermant_ après utilisation), et en demandant de lire le contenu (tout ou partie).
 
 * Ouverture d’un fichier (`open`)
     * Erreur `FileNotFoundError`
@@ -36,7 +36,7 @@ Chemin d’un fichier: syntaxe d’un chemin absolu, relatif, concaténation de 
 
 ### Exercices
 
-Une première série d'exercices exige de manipuler le contenu du fichier `csv` des appels téléphoniques.
+Une première série d'exercices exige de manipuler le contenu du [fichier `csv` des appels téléphoniques](../data/appels_tel.csv).
 
 * **Exercice**. Vérifier que les champs Date et Heure comporte toujours une valeur. Même chose pour le champ Duration.
     * Vous utiliserez la librairie csv qui permet d’accéder aux champs d’une ligne à partir des entêtes de colonnes.
@@ -65,7 +65,7 @@ Expression régulière ([librairie `re`](https://docs.python.org/3/library/re.ht
 
 ### Exercices
 
-Cette seconde série d'exercices exigent d'utiliser des dictionnaires, et de rechercher des expressions régulières dans les mots (on considère le fichier des mots de la langue française).
+Cette seconde série d'exercices exigent d'utiliser des dictionnaires, et de rechercher des expressions régulières dans les mots (on considère le [fichier des mots de la langue française](../data/vocabulaire_francais.csv)).
 
 * **Exercice**. Calculez pour chacune des lettres de l’alphabet, y compris les lettres accentuées (à, â, é, ê, è, etc.):
     * Le nombre de mots débutant par cette lettre.
