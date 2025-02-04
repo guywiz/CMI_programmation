@@ -15,8 +15,9 @@ Nous utiliserons la librairie `python dash` qui permet de développer simplement
 
 ### Leçons
 
-Le cours est organisé en 7 leçons qui correspondront aux 7 séances. Une huitième séance sera dédié à la soutenance du projet.
-* [Leçon 1 : introduction](./Seance_1_introduction/)
-* [Leçon 2 : focus sur `pandas`](./Seance_2_pandas/)
-* [Leçon 3 : focus sur `plotly`](./Seance_3_plotly/)
+Le cours est organisé en leçons qui correspondront aux séances. Une dernière séance est dédiée à la soutenance du projet.
+
+- [Leçon 1 : introduction](./Lecon_1_introduction/)
+- [Leçon 2 : focus sur `pandas`](./Lecon_2_pandas/)
+- [Leçon 3 : focus sur `plotly`](./Lecon_3_plotly/)
 
