@@ -104,3 +104,7 @@ Explorer la librarie pandas (trouver les méthodes) qui permettent:
 * **Exercice**. De _filtrer_ (et ainsi obtenir un autre DataFrame) les données pour ne retenir que les appels d'un numéro donné.
 * **Exercice**. De _convertir_ la durée exprimées en heures:minutes:secondes en secondes.
 * **Exercice**. De calculer le _temps moyen_ d'une conversation pour un numéro de téléphone donné.
+
+--
+
+[Exercices supplémentaires](./Lecon_1_1.md)

@@ -18,7 +18,7 @@ Nous utiliserons la librairie `python dash` qui permet de développer simplement
 Le cours est organisé en leçons qui correspondront aux séances. Une dernière séance est dédiée à la soutenance du projet.
 
 - [Leçon 1 - `python`](./Lecon_1_python/)
-  - [Leçon 1 - Programmation python - Exercices supplémentaires](./Lecon_1_python/Lecon_1_1.md)
+  - [Leçon 1 - `python` - Exercices supplémentaires](./Lecon_1_python/Lecon_1_1.md)
 - [Leçon 2 : focus sur `pandas`](./Lecon_2_pandas/)
 - [Leçon 3 : focus sur `plotly`](./Lecon_3_plotly/)
 
