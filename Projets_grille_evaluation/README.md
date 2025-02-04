@@ -6,7 +6,7 @@ Cette fiche explicite les attendus du projet, et les critères d'évaluation, ta
 
 ### Attendus
 
-* Le code du projet doit être posé sur un dépôt git (CREMI). Assurez-vous de me donner accès au code (a minima en lecture).
+* Le code du projet doit être posé sur un dépôt git (CREMI ou github). Assurez-vous de me donner accès au code (a minima en lecture).
 * Vous pouvez rédiger une courte documentation: éditez un fichier README.md en [format `markdown`](https://www.markdownguide.org/basic-syntax/), il sera alors affiché dès l'accès à l'URL du projet. (Prenez modèle sur les fichiers de cours posées sur `github`)
 * Vous développez une application à l'aide de la librairie `dash` qui permet de visualiser les données sur les emplois obtenues du site `data.gouv.fr`
 * Votre application est construite selon le modèle MVC:
