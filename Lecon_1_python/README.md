@@ -79,7 +79,3 @@ Vous utiliserez un dictionnaire indexé par les lettres, dont les valeurs seront
 Vous itérerez sur le fichier de mots, en incrémentant l’entrée correspondante du dictionnaire
 * **Exercice 10**. Combien de mots contiennent la double consonne « tt » ? Combien de mots contiennent une double consonne ? Combien de mots contiennent deux fois la lettre « z » ?
 * **Exercice 11**. Combien de mots se terminent par les lettres « ge » ?
-
---
-
-[Exercices supplémentaires](./Lecon_1_1.md)
