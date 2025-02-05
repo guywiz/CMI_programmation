@@ -10,7 +10,7 @@ La librairie pandas offre une structure de données: les `DataFrame` (et leur ve
 
 Ces exercices consistent à explorer les possibités de la librairie. Ils vous mettent au défi de toruver la réponse en fouillant sur le net (documentation python, W3C School, blogs de développeurs, etc.).
 
-On reprend l'exemple des données d'appels téléphoniques (fichier `appels_telTEL.csv`), chargé dans un `DataFrame` qu'on appelera `df_TEL`.
+On reprend l'exemple des données d'appels téléphoniques ([fichier `appels_tel.csv`](../data/appels_tel.csv)), chargé dans un `DataFrame` qu'on appelera `df_TEL`.
 
 ### Lecture et sauvegarde d'un `DataFrame`
 
