@@ -2,6 +2,11 @@
 
 Cette première leçon fait une revue du langage `python` afin de poser les bases.
 
+Voir aussi les fiches
+
+- [Leçon 1 - `python` - Exercices supplémentaires](./Lecon_1_python/Lecon_1_1.md)
+- [Leçon 1 - `python` - Environnnements virtuels](./Lecon_1_python/Lecon_1_2.md)
+
 ## Structures de données
 
  `python`propose essentiellement deux structures de données: les _listes_ et les _dictionnaires_.
