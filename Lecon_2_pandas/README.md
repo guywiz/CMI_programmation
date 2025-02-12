@@ -1,6 +1,6 @@
 # CMI_programmation
 
-## Séance 2
+## Leçon 2
 
 Cette séance poursuit et creuse les possibilités offertes par pandas, et revient sur le calcul d'expressions régulières dans les chaînes de caractères.
 
