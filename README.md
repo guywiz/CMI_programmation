@@ -23,5 +23,5 @@ Le cours est organisé en leçons qui correspondront aux séances. Une dernière
 - Leçon 2 :
   - [focus sur `pandas` et ](./Lecon_2_pandas/README_pandas.md)
   - [focus sur `plotly`](./Lecon_2_pandas/README_plotly.md)
-- [Leçon 1 - `dash`](./Lecon_3_dash/)
+- [Leçon 3 - `dash`](./Lecon_3_dash/)
 
