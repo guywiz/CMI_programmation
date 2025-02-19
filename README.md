@@ -20,6 +20,7 @@ Le cours est organisé en leçons qui correspondront aux séances. Une dernière
 - [Leçon 1 - `python`](./Lecon_1_python/)
   - [Leçon 1 - `python` - Exercices supplémentaires](./Lecon_1_python/Lecon_1_1.md)
   - [Leçon 1 - `python` - Environnnements virtuels](./Lecon_1_python/Lecon_1_2.md)
-- [Leçon 2 : focus sur `pandas`](./Lecon_2_pandas/)
-- [Leçon 3 : focus sur `plotly`](./Lecon_3_plotly/)
+- Leçon 2 :
+  - [focus sur `pandas` et ](./Lecon_2_pandas/README_pandas.md)
+  - [focus sur `plotly`](./Lecon_2_pandas/README_plotly.md)
 
