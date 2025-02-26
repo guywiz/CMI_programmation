@@ -1,4 +1,4 @@
-# CMI_programmation - Leçon 1
+# CMI_programmation - Leçon 3
 
 Cette leçon se penche sur la librairie `dash` facilitant la construction d'applications web.
 
